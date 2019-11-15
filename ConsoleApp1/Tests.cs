@@ -20,7 +20,7 @@ namespace FMIExamples
         {
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
             driver.Navigate().GoToUrl("https://www.mail.bg/");
-            driver.Manage().Window.Maximize();
+            driver.Manae().Window.Maximize();
             
             IWebElement username = driver.FindElement(By.Id("username")); 
             IWebElement password = driver.FindElement(By.Id("password"));
