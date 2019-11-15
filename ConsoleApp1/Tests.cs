@@ -29,6 +29,7 @@ namespace FMIExamples
             
             Assert.AreEqual(lostPasswordLink.Text, "Забравена парола");
             
+    
 
             username.Click();
 
