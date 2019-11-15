@@ -19,7 +19,7 @@ namespace FMIExamples
         public void test()
         {
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-            driver.Navigate().GoToUrl("https://www.abv.bg/");
+            driver.Navigate().GoToUrl("https://www.asadabv.bg/");
             driver.Manage().Window.Maximize();
             
             IWebElement username = driver.FindElement(By.Id("username")); 
