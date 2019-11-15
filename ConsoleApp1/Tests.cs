@@ -19,7 +19,7 @@ namespace FMIExamples
         public void test()
         {
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-            driver.Navigate().GoToUrl("https://www.mail.bg/");
+            driver.Navigate().GoToUrl("https://www.abv.bg/");
             driver.Manage().Window.Maximize();
             
             IWebElement username = driver.FindElement(By.Id("username")); 
@@ -43,6 +43,8 @@ namespace FMIExamples
             Assert.AreEqual(usernameLabel.Text, "testing_fmi@abv.bg");
 
             driver.Quit();
+
+            //Pull Request Test - Sinan
         }
     }
 }
