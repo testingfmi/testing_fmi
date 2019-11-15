@@ -19,7 +19,7 @@ namespace FMIExamples
         public void test()
         {
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-            driver.Navigate().GoToUrl("https://www.asadabv.bg/");
+            driver.Navigate().GoToUrl("https://www.abv.bg/");
             driver.Manage().Window.Maximize();
             
             IWebElement username = driver.FindElement(By.Id("username")); 
@@ -29,6 +29,7 @@ namespace FMIExamples
             
             Assert.AreEqual(lostPasswordLink.Text, "Забравена парола");
             
+    
 
             username.Click();
 
