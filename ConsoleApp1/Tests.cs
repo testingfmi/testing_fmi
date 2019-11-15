@@ -22,7 +22,7 @@ namespace FMIExamples
             driver.Navigate().GoToUrl("https://www.abv.bg/");
             driver.Manage().Window.Maximize();
             
-            IWebElement username = driver.FindElement(By.Id("username")); 
+            IWebElement username = driver.FidElement(By.Id("username")); 
             IWebElement password = driver.FindElement(By.Id("password"));
             IWebElement loginBtn = driver.FindElement(By.Id("loginBut"));
             IWebElement lostPasswordLink = driver.FindElement(By.Id("lostPasswordLink"));
@@ -45,6 +45,7 @@ namespace FMIExamples
             driver.Quit();
 
             //Pull Request Test - Sinan
+
         }
     }
 }
