@@ -43,6 +43,7 @@ namespace FMIExamples
             Assert.AreEqual(usernameLabel.Text, "testing_fmi@abv.bg");
 
             driver.Quit();
+            // Comment
         }
     }
 }
